@@ -13,22 +13,24 @@ export async function POST(req: Request) {
     if (event.type === "checkout.session.completed") {
       const session = event.data.object;
 
-      const lineItems = await stripe.checkout.sessions.listLineItems(session.id);
-    //   console.log('lineItems before mapping -->',lineItems.data)
+      const lineItems = await stripe.checkout.sessions.listLineItems(
+        session.id
+      );
       if (!lineItems) {
         throw new Error(`missing line items, ${event.id}`);
       }
-      //reset cart?
-      //get line items
-     
-      const formattedLineItems = lineItems.data.map((item: { price: { product: any; }; quantity: any; }) => ({
-        id: item.price.product,
-        quantity: item.quantity
-      }));
-    
-    //   console.log("formatted lineItems-->", formattedLineItems);
+
+      const formattedLineItems = lineItems.data.map(
+        (item: { price: { product: any }; quantity: any }) => ({
+          id: item.price.product,
+          quantity: item.quantity,
+        })
+      );
+
       //update quantity in sanity
-      formattedLineItems.forEach((lineItem: FormattedLineItem) => updateStockInSanity(lineItem));
+      formattedLineItems.forEach((lineItem: FormattedLineItem) =>
+        updateStockInSanity(lineItem)
+      );
     }
 
     return NextResponse.json({ result: event, ok: true });
