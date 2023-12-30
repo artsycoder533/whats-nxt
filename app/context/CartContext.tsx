@@ -24,11 +24,18 @@ interface CartProviderProps {
 }
 
 export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
-  const initialCart = localStorage.getItem("cart");
-  const initialCartArray: Product[] = initialCart
-    ? JSON.parse(initialCart)
-    : [];
-  const [cart, setCart] = useState<Product[]>(initialCartArray);
+  // const initialCart = localStorage.getItem("cart");
+  // const initialCartArray: Product[] = initialCart
+  //   ? JSON.parse(initialCart)
+  //   : [];
+  const [cart, setCart] = useState<Product[]>([]);
+
+  useEffect(() => {
+    const cartFromStorage = JSON.parse(localStorage.getItem('cart') || '[]');
+    if(cartFromStorage){
+      setCart(cartFromStorage);
+    }
+  }, [])
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
