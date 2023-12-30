@@ -47,5 +47,5 @@ type StripeProduct = {
 
 type FormattedLineItem = {
   id: string;
-  quantity: string;
+  quantity: number;
 }
