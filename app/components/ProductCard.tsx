@@ -23,8 +23,6 @@ const ProductCard = ({ product }: Props) => {
 
   const media = [...images, ...videos];
 
-  console.log(product)
-
   return (
     <div className="flex flex-col lg:flex-row gap-16">
       <div className="flex flex-col gap-4 basis-1/2">
