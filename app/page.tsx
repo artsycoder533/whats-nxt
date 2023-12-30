@@ -1,20 +1,13 @@
-import { getToken } from "./paypal/paypal";
-import { cookies } from "next/headers";
+import Hero from "./components/Hero";
+import Mission from "./components/Mission";
+import Contact from "./components/Contact";
 
 export default async function Home() {
-  const getAccessToken = async () => {
-    "use server";
-    const accessToken = await getToken();
-    cookies().set("accessToken", accessToken);
-    console.log("access token==>", accessToken);
-    return accessToken;
-  };
-
-  getAccessToken();
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>This is my home page!</h1>
-    </main>
+    <section>
+      <Hero />
+      <Mission />
+      <Contact />
+    </section>
   );
 }
