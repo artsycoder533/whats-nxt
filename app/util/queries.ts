@@ -8,9 +8,5 @@ export const allProducts = `
       'altText': altText, 
       'url': image.asset->url
     },
-    videos[] {
-      "url": videoFile.asset->url,
-      altText
-    }
   }
 `

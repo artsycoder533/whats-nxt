@@ -19,16 +19,11 @@ async function getProductBySlug(slug: string) {
       description,
       color, price,
       stockQuantity,
-      'category':category->name,
       'slug':slug.current,
       'images': images[]{
         'altText': altText, 
         'url': image.asset->url
       },
-      videos[] {
-        "url": videoFile.asset->url,
-        altText
-      }
     }
   `;
 

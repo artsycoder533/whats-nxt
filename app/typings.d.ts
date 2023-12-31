@@ -12,10 +12,6 @@ type Products = {
   category: string;
   slug: string;
   quantity: number;
-  videos: {
-    url: string;
-    altText: string;
-  };
 };
 
 type Product = {
@@ -32,10 +28,6 @@ type Product = {
   category: string;
   slug: string;
   quantity: number;
-  videos: {
-    url: string;
-    altText: string;
-  }[];
 };
 
 type StripeProduct = {

@@ -9,19 +9,25 @@ type Props = {
 
 const ProductCard = ({ product }: Props) => {
   const { addToCart, cart } = useCart();
-  const { name, description, color, price, stockQuantity, images, videos, quantity } =
-    product;
+  const {
+    name,
+    description,
+    color,
+    price,
+    stockQuantity,
+    images,
+  } = product;
   const [showFullDescription, setShowFullDescription] = useState(false);
   const [featuredMedia, setFeaturedMedia] = useState<string>(images[0].url);
-  const [currentProduct, setCurrentProduct] = useState<Product | undefined>(() => {
-    return cart.find((item) => item._id === product._id);
-  });
+  const [currentProduct, setCurrentProduct] = useState<Product | undefined>(
+    () => {
+      return cart.find((item) => item._id === product._id);
+    }
+  );
 
   const paragraphs = description.split("\n\n");
 
   const displayText = showFullDescription ? description : paragraphs[0];
-
-  const media = [...images, ...videos];
 
   return (
     <div className="flex flex-col lg:flex-row gap-16">
@@ -37,27 +43,17 @@ const ProductCard = ({ product }: Props) => {
           />
         </div>
         <div className="flex flex-row gap-3 h-28 max-w-[500px] mx-auto lg:m-0 w-[90vw] overflow-x-auto pb-2 pr-2">
-          {media.map((media, index) => {
-            if (media.url.includes("images")) {
-              return (
-                <Image
-                  src={media.url}
-                  alt={media.altText}
-                  key={`${media.url}{index}`}
-                  width={250}
-                  height={250}
-                  className="rounded-lg object-contain object-center cursor-pointer"
-                  onClick={() => setFeaturedMedia(media.url)}
-                />
-              );
-            } else if (media.url.includes("files")) {
-              return (
-                <video width="250" height="250" muted key={`${media.url}{index}`} className="cursor-pointer" onClick={() => setFeaturedMedia(media.url)}>
-                  <source src={media.url} type="video/mp4" />
-                </video>
-              );
-            }
-          })}
+          {images.map((image) => (
+            <Image
+              src={image.url}
+              alt={image.altText}
+              key={`${image.url}{index}`}
+              width={250}
+              height={250}
+              className="rounded-lg object-contain object-center cursor-pointer"
+              onClick={() => setFeaturedMedia(image.url)}
+            />
+          ))}
         </div>
       </div>
       <div className="flex flex-col gap-2 basis-1/2">
@@ -71,15 +67,21 @@ const ProductCard = ({ product }: Props) => {
           <p className="font-medium">Color: {color}</p>
           <div className="flex flex-wrap gap-3 items-center mb-3">
             <button
-              className={`px-6 py-3 mt-4  rounded-lg ${currentProduct?.quantity === stockQuantity ? 'bg-gray-500 cursor-not-allowed' : 'bg-[#B76E79] hover:bg-[#8a525a]'} text-white`}
+              className={`px-6 py-3 mt-4  rounded-lg ${
+                currentProduct?.quantity === stockQuantity
+                  ? "bg-gray-500 cursor-not-allowed"
+                  : "bg-[#B76E79] hover:bg-[#8a525a]"
+              } text-white`}
               disabled={currentProduct?.quantity === stockQuantity}
               onClick={() => {
                 addToCart(product);
               }}
             >
-              {stockQuantity === 0 ? 'Out of Stock': 'Add To Cart'}
+              {stockQuantity === 0 ? "Out of Stock" : "Add To Cart"}
             </button>
-            {stockQuantity <= 3 ? <p className="text-red-500 text-md w-full">Only 3 left!</p> : null}
+            {stockQuantity <= 3 ? (
+              <p className="text-red-500 text-md w-full">Only 3 left!</p>
+            ) : null}
           </div>
 
           <p className="whitespace-pre-line font-light">{displayText}</p>
