@@ -35,7 +35,7 @@ const Mission = () => {
         your journey to becoming the best version of yourself.
         <br/>
         <br/>
-        Join us at WHATSNXT and embark on a transformative adventure where each day brings new
+        Join us at WHATS NXT and embark on a transformative adventure where each day brings new
         possibilities and opportunities for growth. Your future is
         waiting—<span className="text-[#B76E79]">what&apos;s next for you?</span>
       </p>

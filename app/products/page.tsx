@@ -12,7 +12,7 @@ export default async function Products() {
   return (
     <section className="flex grow flex-col py-24 max-w-[1400px] w-[90vw] mx-auto">
       <Title text="Products" />
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-12">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-12 border">
         {products?.map((product: Products) => <Product key={product.slug} product={product} />)}
       </div>
     </section>
