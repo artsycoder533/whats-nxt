@@ -26,7 +26,7 @@ const Hero = () => {
       {/* Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80"></div>
 
-      <div className="z-10 text-white flex flex-col justify-center max-w-[1400px] w-[90vw] mx-auto mt-12">
+      <div className="z-10 text-white flex flex-col justify-center max-w-[1400px] w-[90vw] mx-auto mt-16">
         <h1 className="text-8xl flex flex-col gap-1 font-extralight">
           <span className="flex gap-2">Imagine</span>
           <HiArrowDown className="text-[#B76E79] my-2 text-4xl"/>

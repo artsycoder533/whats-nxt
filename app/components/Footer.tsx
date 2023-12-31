@@ -16,7 +16,7 @@ const Footer = (props: Props) => {
   };
 
   return (
-    <footer className="flex flex-col sticky mt-auto pt-6 px-4 bg-gray-900">
+    <footer className="flex flex-col sticky mt-auto pt-6 px-4 bg-zinc-800">
       <div className="max-w-[1400px] w-[90vw] mx-auto">
         <div className="flex flex-col lg:flex-row py-4 gap-8 lg:gap-0">
           <div className="w-full flex flex-col items-center lg:items-start">
