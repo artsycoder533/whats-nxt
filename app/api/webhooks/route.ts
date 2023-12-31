@@ -11,6 +11,7 @@ export async function POST(req: Request) {
     const event = stripe.webhooks.constructEvent(body, signature, secret);
 
     if (event.type === "checkout.session.completed") {
+      console.log('helppppp!');
       const session = event.data.object;
 
       const lineItems = await stripe.checkout.sessions.listLineItems(
