@@ -7,6 +7,7 @@ const Success = () => {
   const { resetCart } = useCart();
 
   useEffect(() => {
+    console.log('resetting cart!');
     resetCart();
   }, []);
 
