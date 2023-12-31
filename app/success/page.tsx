@@ -11,8 +11,8 @@ const Success = () => {
   }, []);
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24 text-4xl">
-      <h2>Thank you for your order!  We appreciate your business!</h2>
+    <div className="flex flex-col items-center mt-48 text-4xl font-extralight">
+      <p>Thank you for your order!  We appreciate your business!</p>
     </div>
   );
 };

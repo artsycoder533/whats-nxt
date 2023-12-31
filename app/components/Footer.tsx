@@ -20,7 +20,7 @@ const Footer = (props: Props) => {
       <div className="max-w-[1400px] w-[90vw] mx-auto">
         <div className="flex flex-col lg:flex-row py-4 gap-8 lg:gap-0">
           <div className="w-full flex flex-col items-center lg:items-start">
-            <p className="text-3xl hidden xl:block text-[#B76E79] font-extralight uppercase">
+            <p className="text-3xl text-[#B76E79] font-extralight uppercase">
               Whats Nxt
             </p>
 
