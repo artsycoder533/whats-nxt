@@ -60,7 +60,7 @@ const Cart = () => {
       {cart.length > 0
         ? cart.map((cartItem) => {
             return (
-              <div key={cartItem._id} className="w-full border-b p-3">
+              <Link href={`/products/${cartItem.slug}`} key={cartItem._id} className="w-full border-b p-3">
                 <div className="flex justify-between gap-8">
                   <div>
                     <Image
@@ -99,7 +99,7 @@ const Cart = () => {
                     
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })
         : null}
