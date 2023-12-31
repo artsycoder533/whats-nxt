@@ -91,8 +91,8 @@ export const POST = async (request: any) => {
         allowed_countries: ["US"],
       },
       mode: "payment",
-      success_url: "https://whats-nxt.vercel.app/success",
-      cancel_url: "https://whats-nxt.vercel.app/cart",
+      success_url: "https://www.whatsnxt.org/success",
+      cancel_url: "https://www.whatsnxt.org/cart",
     });
 
     return NextResponse.json({ url: session.url });

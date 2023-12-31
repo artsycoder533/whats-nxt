@@ -18,7 +18,7 @@ const Cart = () => {
 
   const checkout = async () => {
     try {
-      const response = await fetch("https://whats-nxt.vercel.app/api/checkout", {
+      const response = await fetch("https://www.whatsnxt.org/api/checkout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
