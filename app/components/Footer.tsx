@@ -30,11 +30,11 @@ const Footer = (props: Props) => {
               <p>Suprize, AZ 85379</p>
             </address>
             <Link
-              href="whattsnxt@gmail.com"
+              href="mailto:whattsnxt@gmail.com"
               className="text-white hover:text-[#B76E79] flex flex-row gap-3 items-center font-light text-sm mb-2"
             >
               <FaEnvelope />
-              whattsnxt@gmail.com
+              whatsnxtt@gmail.com
             </Link>
             <div className="flex space-x-4 mt-8  text-[#B76E79]">
               <Link
