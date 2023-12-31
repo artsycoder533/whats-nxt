@@ -9,6 +9,7 @@ const Success = () => {
   useEffect(() => {
     console.log('resetting cart!');
     resetCart();
+    localStorage.clear();
   }, []);
 
   return (
