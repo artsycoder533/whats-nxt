@@ -12,7 +12,7 @@ const Product = ({ product }: Props) => {
 
   return (
     <Link href={`/products/${slug}`} className=" max-w-96">
-      <div className="h-[300px]">
+      <div className="h-96">
         <Image
           src={images?.url}
           alt={images?.altText}
