@@ -17,7 +17,7 @@ const Mission = () => {
         notebooks; they are your companions on the path to personal growth.
         Tackling crucial topics such as productivity, anxiety, and self-care,
         our planners provide a roadmap for setting meaningful goals, overcoming
-        obstacles, and cultivating a balanced and fulfilling life.<br/>
+        obstacles, and cultivating a balanced and fulfilling life.
         <br/>
         <br/>
         In addition to our innovative products, WHATS NXT is committed to fostering a
@@ -26,13 +26,13 @@ const Mission = () => {
         experiences that go beyond conventional learning. Led by experts in the
         fields of personal development and well-being, these events offer
         immersive and transformative experiences, equipping you with practical
-        tools to navigate the complexities of modern life.<br/>
+        tools to navigate the complexities of modern life.
         <br/>
         <br/>
         Why choose WHATS NXT? We believe in a holistic approach to personal development, addressing
         not only professional goals but also the mental, emotional, and physical
         aspects of your well-being. Our mission is to inspire and support you on
-        your journey to becoming the best version of yourself.<br/>
+        your journey to becoming the best version of yourself.
         <br/>
         <br/>
         Join us at WHATSNXT and embark on a transformative adventure where each day brings new
