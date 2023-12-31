@@ -60,9 +60,9 @@ const Cart = () => {
       {cart.length > 0
         ? cart.map((cartItem) => {
             return (
-              <Link href={`/products/${cartItem.slug}`} key={cartItem._id} className="w-full border-b p-3">
+              <div key={cartItem._id} className="w-full border-b p-3">
                 <div className="flex justify-between gap-8">
-                  <div>
+                  <Link href={`/products/${cartItem.slug}`}>
                     <Image
                       src={cartItem.images[0].url}
                       alt={cartItem.images[0].altText}
@@ -71,7 +71,7 @@ const Cart = () => {
                       className="rounded-lg"
                       priority
                     />
-                  </div>
+                  </Link>
                   <div className="grid grid-cols-2 justify-between w-full">
                     <p>{cartItem.name} - <span className="font-extralight">{cartItem.color}</span></p>
                     <p className="place-self-end self-start">${cartItem.price * cartItem.quantity}</p>
@@ -99,7 +99,7 @@ const Cart = () => {
                     
                   </div>
                 </div>
-              </Link>
+              </div>
             );
           })
         : null}
