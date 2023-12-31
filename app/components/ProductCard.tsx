@@ -9,14 +9,7 @@ type Props = {
 
 const ProductCard = ({ product }: Props) => {
   const { addToCart, cart } = useCart();
-  const {
-    name,
-    description,
-    color,
-    price,
-    stockQuantity,
-    images,
-  } = product;
+  const { name, description, color, price, stockQuantity, images } = product;
   const [showFullDescription, setShowFullDescription] = useState(false);
   const [featuredMedia, setFeaturedMedia] = useState<string>(images[0].url);
   const [currentProduct, setCurrentProduct] = useState<Product | undefined>(
@@ -97,8 +90,31 @@ const ProductCard = ({ product }: Props) => {
             <summary>Features</summary>
 
             <ul className="py-3 list-disc list-inside ml-6 font-light">
+              <li>Vision Board</li>
+              <li>Emotions Wheel</li>
+              <li>Wheel of Life</li>
+              <li>Fitness Planner</li>
+              <li>Habit Tracker</li>
+              <li>Goal Action Plan</li>
+              <li>Self Care Planner</li>
+              <li>Gratitude Journal</li>
+              <li>To-Do List</li>
+              <li>Things to Remember</li>
+              <li>Personal Reflection Page</li>
+              <li>Monthly and Weekly Calendar</li>
+              <li>2024/2025 Calender</li>
+              <li>Notes</li>
+              <li>....and much more!</li>
+            </ul>
+          </details>
+          <details className=" py-3 border-b cursor-pointer">
+            <summary>Details</summary>
+
+            <ul className="py-3 list-disc list-inside ml-6 font-light">
+              <li>207 pages</li>
               <li>Spiral Bound</li>
               <li>Dimensions: 8.5 x 11</li>
+              <li>Weight: 1lb 6.1 oz.</li>
             </ul>
           </details>
           <details className=" py-3 border-b cursor-pointer">
@@ -110,10 +126,7 @@ const ProductCard = ({ product }: Props) => {
             <summary>Returns</summary>
 
             <ul className="py-3 list-disc list-inside ml-6 font-light">
-              <li>Spiral Bound</li>
-              <li>Dimensions: 8.5&quot; x 11&quot; x 0.5&quot;</li>
-              <li>207 pages</li>
-              <li>1lb 6.1 oz.</li>
+              <li>All sales are final!</li>
             </ul>
           </details>
         </div>
