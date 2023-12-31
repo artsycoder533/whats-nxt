@@ -11,8 +11,8 @@ const Product = ({ product }: Props) => {
   const { images, name, price, color, slug } = product;
 
   return (
-    <Link href={`/products/${slug}`} className=" max-w-96">
-      <div className="h-96">
+    <Link href={`/products/${slug}`} className="flex flex-col">
+      <div className="w-full h-full">
         <Image
           src={images?.url}
           alt={images?.altText}
