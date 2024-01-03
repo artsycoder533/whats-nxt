@@ -2,6 +2,7 @@ import ProductCard from "@/app/components/ProductCard";
 import { client } from "@/app/lib/sanity";
 import Link from "next/link";
 import { HiArrowLeft } from "react-icons/hi2";
+import { Metadata } from "next";
 
 type Props = {
   params: {
@@ -10,6 +11,12 @@ type Props = {
 };
 
 export const revalidate = 30;
+
+export const generateMetadata = ({params}: Props): Metadata => {
+  return {
+    title: `${params.slug}`
+  }
+}
 
 async function getProductBySlug(slug: string) {
   const query = `

@@ -2,6 +2,11 @@ import Product from "../components/Product";
 import { client } from "../lib/sanity";
 import { allProducts } from "../util/queries";
 import Title from "../components/Title";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Products',
+}
 
 export const revalidate = 30;
 
