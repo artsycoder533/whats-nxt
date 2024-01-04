@@ -91,10 +91,8 @@ export const POST = async (request: any) => {
         allowed_countries: ["US"],
       },
       mode: "payment",
-      // success_url: "https://www.whatsnxt.org/success",
-      // cancel_url: "https://www.whatsnxt.org/cart",
-      success_url: 'http://localhost:3000/success',
-      cancel_url: 'http://localhost:3000/cart',
+      success_url: "https://www.whatsnxt.org/success",
+      cancel_url: "https://www.whatsnxt.org/cart",
     });
 
     return NextResponse.json({ url: session.url });
