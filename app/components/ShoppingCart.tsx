@@ -22,14 +22,14 @@ const ShoppingCart = () => {
 
   const checkout = async () => {
     try {
-      const response = await fetch("https://www.whatsnxt.org/api/checkout", {
+      const response = await fetch("http://localhost:3000/api/checkout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ products: cart }),
       });
-
+      console.log('response---------->', response)
       if (response.ok) {
         // Reset the cart to an empty array upon successful checkout
         console.log("response-->", response);
