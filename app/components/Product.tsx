@@ -19,6 +19,7 @@ const Product = ({ product }: Props) => {
           className="rounded-xl h-full w-full object-cover object-center"
           width={500}
           height={500}
+          priority
         />
       </div>
       <div className="mt-4">
