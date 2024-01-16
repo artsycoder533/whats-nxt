@@ -1,5 +1,5 @@
 export const allProducts = `
-*[_type == 'product' && stockQuantity > 0]{
+*[_type == 'product']{
     _id,
     name,
     color, price,

@@ -9,7 +9,7 @@ type Props = {
 
 const ProductCard = ({ product }: Props) => {
   const { addToCart, cart } = useCart();
-  const { name, description, color, price, stockQuantity, images } = product;
+  const { name, description, color, price, images } = product;
   const [showFullDescription, setShowFullDescription] = useState(false);
   const [featuredMedia, setFeaturedMedia] = useState<string>(images[0].url);
   const [currentProduct, setCurrentProduct] = useState<Product | undefined>(
@@ -52,29 +52,19 @@ const ProductCard = ({ product }: Props) => {
       <div className="flex flex-col gap-2 basis-1/2">
         <div className="">
           <h2 className="text-2xl font-semibold">{name}</h2>
-          {stockQuantity > 0 ? (
-            <p className="text-xl my-3">{`$${price}`}</p>
-          ) : (
-            <p className="text-xl my-3 text-red-500">Out of Stock</p>
-          )}
+
+          <p className="text-xl my-3">{`$${price}`}</p>
+
           <p className="font-medium">Color: {color}</p>
           <div className="flex flex-wrap gap-3 items-center mb-3">
             <button
-              className={`px-6 py-3 mt-4  rounded-lg ${
-                currentProduct?.quantity === stockQuantity
-                  ? "bg-gray-500 cursor-not-allowed"
-                  : "bg-[#B76E79] hover:bg-[#8a525a]"
-              } text-white`}
-              disabled={currentProduct?.quantity === stockQuantity}
+              className="px-6 py-3 mt-4  rounded-lg bg-[#B76E79] hover:bg-[#8a525a] text-white"
               onClick={() => {
                 addToCart(product);
               }}
             >
-              {stockQuantity === 0 ? "Out of Stock" : "Add To Cart"}
+              Add To Cart
             </button>
-            {stockQuantity <= 3 ? (
-              <p className="text-red-500 text-md w-full">Only 3 left!</p>
-            ) : null}
           </div>
 
           <p className="whitespace-pre-line font-light">{displayText}</p>
@@ -120,13 +110,15 @@ const ProductCard = ({ product }: Props) => {
           <details className=" py-3 border-b cursor-pointer">
             <summary>Shipping</summary>
 
-            <p className="py-3 font-light ml-6">All planners ship free!</p>
+            <p className="py-3 font-light ml-6">
+            All planners ship for free! Please be aware that depending on inventory, planners may be printed on demand, leading to slightly longer shipping times.
+            </p>
           </details>
           <details className=" py-3 border-b cursor-pointer">
             <summary>Returns</summary>
 
             <ul className="py-3 list-disc list-inside ml-6 font-light">
-              <li>All sales are final!</li>
+              <li>All sales are final.</li>
             </ul>
           </details>
         </div>

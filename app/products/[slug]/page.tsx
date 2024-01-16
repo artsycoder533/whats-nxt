@@ -25,7 +25,6 @@ async function getProductBySlug(slug: string) {
       name,
       description,
       color, price,
-      stockQuantity,
       'slug':slug.current,
       'images': images[]{
         'altText': altText, 

@@ -8,7 +8,6 @@ type Products = {
   price: number;
   color: string;
   description: string;
-  stockQuantity: number;
   category: string;
   slug: string;
   quantity: number;
@@ -24,7 +23,6 @@ type Product = {
   price: number;
   color: string;
   description: string;
-  stockQuantity: number;
   category: string;
   slug: string;
   quantity: number;
