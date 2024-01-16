@@ -9,10 +9,10 @@ const SuccessBlock = () => {
   const { resetCart } = useCart();
 
   useEffect(() => {
-    console.log("resetting cart!");
     resetCart();
     localStorage.clear();
   }, []);
+  
   return (
     <div className="flex flex-col items-center mt-48 font-extralight gap-4">
       <BsCheck2Circle className="text-6xl text-green-700" />

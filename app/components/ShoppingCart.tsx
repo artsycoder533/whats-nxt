@@ -29,13 +29,11 @@ const ShoppingCart = () => {
         },
         body: JSON.stringify({ products: cart }),
       });
-      console.log('response---------->', response)
+
       if (response.ok) {
         // Reset the cart to an empty array upon successful checkout
-        console.log("response-->", response);
-
+      
         const responseData = await response.json();
-        console.log(responseData);
 
         if (responseData.url) {
           router.push(responseData.url);
