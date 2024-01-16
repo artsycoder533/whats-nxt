@@ -76,7 +76,7 @@ export const POST = async (request: any) => {
       line_items: stripeItems,
       shipping_options: [
         {
-          shipping_rate: "shr_1OZ1udAkNambRSFhMrdZ6tyG",
+          shipping_rate: "shr_1OZ4y8AkNambRSFhmDwyHIis",
         },
       ],
       automatic_tax: {
