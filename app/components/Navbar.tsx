@@ -79,7 +79,7 @@ const Navbar = (props: Props) => {
           );
         })}
       </ul>
-      <Link href="/cart" className="relative flex items-center gap-2 p-3 flex-shrink-0 mr-6 md:mr-0 hover:opacity-90 hover:text-[#8a525a]">
+      <Link href="/cart" onClick={() => setOpen(false)} className="relative flex items-center gap-2 p-3 flex-shrink-0 mr-6 md:mr-0 hover:opacity-90 hover:text-[#8a525a]">
         Cart {totalQuantity > 0 ? <span className="absolute top-0 right-0 -mt-1 bg-[#B76E79] text-white rounded-full h-6 w-6 flex items-center justify-center text-sm">{totalQuantity}</span> : null}
         <FaShoppingCart />
       </Link>
