@@ -22,7 +22,7 @@ const ShoppingCart = () => {
 
   const checkout = async () => {
     try {
-      const response = await fetch("https://whatsnxt.org/api/checkout", {
+      const response = await fetch("https://www.whatsnxt.org/api/checkout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
