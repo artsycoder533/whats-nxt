@@ -54,7 +54,6 @@ const Navbar = (props: Props) => {
               objectFit: "contain",
             }}
           />
-          {/* <div className="w-[60px] h-[60px] bg-purple-800"/> */}
           <p className="text-3xl hidden xl:block text-[#B76E79] font-extralight uppercase">Whats Nxt</p>
         </div>
       </div>

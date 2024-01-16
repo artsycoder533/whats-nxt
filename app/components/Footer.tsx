@@ -6,6 +6,8 @@ import {
   FaEnvelope,
   FaHeart,
 } from "react-icons/fa";
+import Image from "next/image";
+import logo from "../../public/images/logo.png";
 
 type Props = {};
 
@@ -20,9 +22,21 @@ const Footer = (props: Props) => {
       <div className="max-w-[1400px] w-[90vw] mx-auto">
         <div className="flex flex-col lg:flex-row py-4 gap-8 lg:gap-0">
           <div className="w-full flex flex-col items-center lg:items-start">
-            <p className="text-3xl text-[#B76E79] font-extralight uppercase">
+            <div className="flex gap-2 items-center">
+            <Image
+            src={logo}
+            alt="Omni Addiction & Mental Health Services"
+            width={75}
+            height={75}
+            style={{
+              objectFit: "contain",
+            }}
+          />
+          <p className="text-3xl text-[#B76E79] font-extralight uppercase">
               Whats Nxt
             </p>
+            </div>
+            
 
             <address className="text-white text-light text-sm my-2">
               <p>15411 W. Waddell Rd. </p>
@@ -37,7 +51,7 @@ const Footer = (props: Props) => {
               whatsnxtt@gmail.com
             </Link>
             <div className="flex space-x-4 mt-8  text-[#B76E79]">
-              <Link
+              {/* <Link
                 href="https://www.instagram.com/renewedpsychological/"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -46,8 +60,8 @@ const Footer = (props: Props) => {
                   className="text-3xl hover:text-white"
                   alt="Instagram"
                 />
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="https://www.facebook.com/renewedpsychological"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -56,8 +70,8 @@ const Footer = (props: Props) => {
                   className="text-3xl hover:text-white"
                   alt="Facebook"
                 />
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="https://www.facebook.com/renewedpsychological"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
@@ -66,7 +80,7 @@ const Footer = (props: Props) => {
                   className="text-3xl hover:text-white"
                   alt="Twitter"
                 />
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 w-full">
