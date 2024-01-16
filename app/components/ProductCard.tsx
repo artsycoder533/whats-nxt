@@ -31,7 +31,7 @@ const ProductCard = ({ product }: Props) => {
             height={500}
             src={featuredMedia}
             alt={images[0].altText}
-            // fill
+            priority
             className="rounded-lg object-cover object-center"
           />
         </div>
