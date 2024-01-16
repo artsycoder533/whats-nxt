@@ -7,7 +7,7 @@ import {
   FaHeart,
 } from "react-icons/fa";
 import Image from "next/image";
-import logo from "../../public/images/logo.png";
+import logo from "../../public/images/logo-white.png";
 
 type Props = {};
 
