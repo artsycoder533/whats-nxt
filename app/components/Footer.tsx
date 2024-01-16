@@ -30,6 +30,7 @@ const Footer = (props: Props) => {
                 height={75}
                 style={{
                   objectFit: "contain",
+                  height: "auto"
                 }}
               />
               <p className="text-3xl text-[#B76E79] font-extralight uppercase">

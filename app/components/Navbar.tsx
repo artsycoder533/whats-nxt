@@ -33,7 +33,6 @@ const Navbar = (props: Props) => {
       document.body.style.overflow = "auto";
     }
 
-    // Cleanup function to reset the style when the component unmounts or when the 'open' state changes.
     return () => {
       document.body.style.overflowY = "auto";
     };
@@ -52,6 +51,7 @@ const Navbar = (props: Props) => {
             height={75}
             style={{
               objectFit: "contain",
+              height: "auto"
             }}
           />
           <p className="text-3xl hidden xl:block text-[#B76E79] font-extralight uppercase">Whats Nxt</p>
