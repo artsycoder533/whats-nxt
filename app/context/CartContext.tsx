@@ -64,7 +64,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
       item._id === productId
         ? {
             ...item,
-            quantity: Math.min(item.quantity + 1, item.stockQuantity),
+            quantity: item.quantity + 1,
           }
         : item
     );
