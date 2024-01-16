@@ -23,20 +23,19 @@ const Footer = (props: Props) => {
         <div className="flex flex-col lg:flex-row py-4 gap-8 lg:gap-0">
           <div className="w-full flex flex-col items-center lg:items-start">
             <div className="flex gap-2 items-center">
-            <Image
-            src={logo}
-            alt="Omni Addiction & Mental Health Services"
-            width={75}
-            height={75}
-            style={{
-              objectFit: "contain",
-            }}
-          />
-          <p className="text-3xl text-[#B76E79] font-extralight uppercase">
-              Whats Nxt
-            </p>
+              <Image
+                src={logo}
+                alt="Omni Addiction & Mental Health Services"
+                width={75}
+                height={75}
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+              <p className="text-3xl text-[#B76E79] font-extralight uppercase">
+                Whats Nxt
+              </p>
             </div>
-            
 
             <address className="text-white text-light text-sm my-2">
               <p>15411 W. Waddell Rd. </p>
