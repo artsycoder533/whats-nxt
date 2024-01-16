@@ -66,7 +66,6 @@ export const POST = async (request: any) => {
         quantity: product?.quantity,
         adjustable_quantity: {
           enabled: true,
-          maximum: product.stockQuantity,
         },
       });
     }
