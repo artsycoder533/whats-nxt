@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image'
   },
-  keywords: ['Whats Nxt', 'Impact Planning and Journaling', 'Self Help', 'Fitness Planner', 'Planner', 'Goal Setting', 'Mental Health', 'Emotions']
+  keywords: ['Whats Nxt', 'Impact Planning and Journaling', 'Self Help', 'Fitness Planner', 'Planner', 'Goal Setting', 'Mental Health', 'Emotions Wheel', 'Vision Board', 'Journal', 'Planner']
 };
 
 export default function RootLayout({
