@@ -14,7 +14,6 @@ const Form = () => {
     email: "",
     message: "",
   });
-  console.log(process.env.NEXT_PUBLIC_WHATS_NXT)
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_WHATS_NXT as string);
   const [submissionSuccess, setSubmissionSuccess] = useState<boolean>(false);
 
