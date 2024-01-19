@@ -41,7 +41,7 @@ const Navbar = (props: Props) => {
   }, [open, cart]);
 
   return (
-    <nav className="flex items-center justify-between max-w-[1400px]   md:flex-row md:w-full mx-auto">
+    <nav className="flex items-center justify-between max-w-[1400px] w-[90vw]  md:flex-row mx-auto">
       <div className="flex items-center  w-full md:w-auto">
         <div className="flex items-center gap-3 flex-row">
           <Image
