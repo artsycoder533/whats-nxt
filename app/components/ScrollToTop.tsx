@@ -31,7 +31,7 @@ function ScrollToTop() {
     <>
       {toTop ? (
         <button
-          className="shadow-md  fixed bottom-[105px] right-5 rounded-lg bg-gray-600 text-white cursor-pointer shadow-mg hover:opacity-75 hover:border hover:shadow-lg opacity-75 border-black p-2 z-10"
+          className="shadow-md  fixed bottom-[100px] right-5 rounded-lg bg-gray-600 text-white cursor-pointer shadow-mg hover:opacity-75 hover:border hover:shadow-lg opacity-75 border-black p-2 z-10"
           onClick={scrollPageUp}>
           <FiArrowUp className="text-3xl font-extrabold" />
         </button>

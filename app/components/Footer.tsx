@@ -60,8 +60,8 @@ const Footer = (props: Props) => {
                   className="text-3xl hover:text-white"
                   alt="Instagram"
                 />
-              </Link> */}
-              {/* <Link
+              </Link>
+              <Link
                 href="https://www.facebook.com/renewedpsychological"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -70,8 +70,8 @@ const Footer = (props: Props) => {
                   className="text-3xl hover:text-white"
                   alt="Facebook"
                 />
-              </Link> */}
-              {/* <Link
+              </Link>
+              <Link
                 href="https://www.facebook.com/renewedpsychological"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
