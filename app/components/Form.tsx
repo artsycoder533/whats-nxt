@@ -14,7 +14,7 @@ const Form = () => {
     email: "",
     message: "",
   });
-  console.log(process.env.NEXT_PUBLIC_FORM)
+
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM as string);
   const [submissionSuccess, setSubmissionSuccess] = useState<boolean>(false);
 
