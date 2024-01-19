@@ -35,17 +35,25 @@ const ProductCard = ({ product }: Props) => {
             className="rounded-lg object-cover object-center"
           />
         </div>
-        <div className="flex flex-row gap-3 h-28 max-w-[500px] mx-auto lg:m-0 w-[90vw] overflow-x-auto pb-2 pr-2">
+        <div className="flex flex-row gap-3 h-28 max-w-[500px] mx-auto lg:m-0 w-[90vw] overflow-x-auto">
           {images.map((image) => (
-            <Image
-              src={image.url}
-              alt={image.altText}
+        
+              <Image
               key={`${image.url}{index}`}
-              width={250}
-              height={250}
-              className="rounded-lg object-contain object-center cursor-pointer"
-              onClick={() => setFeaturedMedia(image.url)}
-            />
+                src={image.url}
+                alt={image.altText}
+                width={100}
+                height={100}
+                className="rounded-lg cursor-pointer object-cover"
+                onClick={() => setFeaturedMedia(image.url)}
+                style={{
+                  maxWidth: "100%",
+                  width: "auto",
+                  height: "auto",
+                }}
+        
+              />
+           
           ))}
         </div>
       </div>
@@ -111,7 +119,9 @@ const ProductCard = ({ product }: Props) => {
             <summary>Shipping</summary>
 
             <p className="py-3 font-light ml-6">
-            All planners ship for free! Please be aware that depending on inventory, planners may be printed on demand, leading to slightly longer shipping times.
+              All planners ship for free! Please be aware that depending on
+              inventory, planners may be printed on demand, leading to slightly
+              longer shipping times.
             </p>
           </details>
           <details className=" py-3 border-b cursor-pointer">
