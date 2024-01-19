@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80"></div>
       
       <div className="z-10 text-white flex flex-col justify-center max-w-[1400px] w-[90vw] mx-auto pt-8 md:pt-16">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col gap-1 font-extralight">
+        <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl flex flex-col gap-1 font-extralight">
           <span className="flex gap-2">Imagine</span>
           <HiArrowDown className="text-[#B76E79] my-2 text-4xl"/>
           <span className="flex gap-2">Plan</span>
@@ -21,7 +21,7 @@ const Hero = () => {
         </h1>
         <Link
           href="/products"
-          className="animate-bounce py-3 px-4 bg-[#B76E79] text-white text-center mt-20 self-center rounded-md hover:bg-[#8a525a]"
+          className="animate-bounce p-4 bg-[#B76E79] text-white text-center mt-24 self-center rounded-md hover:bg-[#8a525a]"
         >
           Shop WHATS NXT
         </Link>
