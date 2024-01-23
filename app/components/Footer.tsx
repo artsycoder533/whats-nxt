@@ -51,8 +51,8 @@ const Footer = (props: Props) => {
               whatsnxtt@gmail.com
             </Link>
             <div className="flex space-x-4 mt-8  text-[#B76E79]">
-              {/* <Link
-                href="https://www.instagram.com/renewedpsychological/"
+              <Link
+                href="https://www.instagram.com/whatsnxt4u"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
               >
@@ -61,7 +61,7 @@ const Footer = (props: Props) => {
                   alt="Instagram"
                 />
               </Link>
-              <Link
+              {/* <Link
                 href="https://www.facebook.com/renewedpsychological"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
