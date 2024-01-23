@@ -124,12 +124,12 @@ const Footer = (props: Props) => {
           <p className=" flex flex-row  items-center justify-center gap-1 text-center text-xs text-white">
             Made with <FaHeart className="text-red-500" /> by:{" "}
             <Link
-              href="https://www.natashajohnson.dev"
+              href="https://www.ten23.agency/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline py-2 hover:text-[#B76E79]"
             >
-              Natasha Johnson
+              Ten-23 Agency LLC
             </Link>
           </p>
         </div>
