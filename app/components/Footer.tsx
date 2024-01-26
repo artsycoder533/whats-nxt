@@ -61,8 +61,8 @@ const Footer = (props: Props) => {
                   alt="Instagram"
                 />
               </Link>
-              {/* <Link
-                href="https://www.facebook.com/renewedpsychological"
+              <Link
+                href="https://www.facebook.com/profile.php?id=61555629373412"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
               >
@@ -71,16 +71,6 @@ const Footer = (props: Props) => {
                   alt="Facebook"
                 />
               </Link>
-              <Link
-                href="https://www.facebook.com/renewedpsychological"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-              >
-                <FaTwitter
-                  className="text-3xl hover:text-white"
-                  alt="Twitter"
-                />
-              </Link> */}
             </div>
           </div>
           <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 w-full">
