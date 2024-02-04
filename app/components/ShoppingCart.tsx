@@ -80,7 +80,7 @@ const ShoppingCart = () => {
                       <span className="font-extralight">{cartItem.color}</span>
                     </p>
                     <p className="place-self-end self-start">
-                      ${cartItem.price * cartItem.quantity}
+                      ${(cartItem.price * cartItem.quantity).toFixed(2)}
                     </p>
                     <div className="flex items-center gap-4 place-self-start self-end">
                       <button
