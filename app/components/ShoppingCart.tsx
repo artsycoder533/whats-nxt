@@ -18,7 +18,7 @@ const ShoppingCart = () => {
   const subtotal = cart.reduce((acc, curr) => {
     const productTotal = curr.quantity * curr.price;
     return acc + productTotal;
-  }, 0);
+  }, 0).toFixed(2);
 
   const checkout = async () => {
     try {
