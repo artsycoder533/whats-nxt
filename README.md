@@ -13,8 +13,8 @@ A custom e-commerce website built as a cheaper alternative platforms like Shopif
 
 ### Links
 
-- [Repository URL](https://github.com/artsycoder533/ten23)
-- [Live Site](https://www.ten23.agency/)
+- [Repository URL](https://github.com/artsycoder533/whats-nxt)
+- [Live Site](https://www.whatsnxt.org/)
 
 ### Built With
 
